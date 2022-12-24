@@ -33,32 +33,38 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.ProductID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(48, 31);
+            this.dataGridView1.Location = new System.Drawing.Point(137, 50);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(685, 328);
+            this.dataGridView1.Size = new System.Drawing.Size(1029, 343);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(174, 419);
+            this.textBox1.Location = new System.Drawing.Point(283, 670);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 27);
+            this.textBox1.Size = new System.Drawing.Size(363, 39);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(434, 417);
+            this.button1.Location = new System.Drawing.Point(705, 667);
+            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.Size = new System.Drawing.Size(153, 46);
             this.button1.TabIndex = 2;
             this.button1.Text = "Add to Cart";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,32 +73,65 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(79, 426);
+            this.label1.Location = new System.Drawing.Point(128, 682);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 20);
+            this.label1.Size = new System.Drawing.Size(126, 32);
             this.label1.TabIndex = 3;
             this.label1.Text = "Product ID";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(34, 545);
+            this.button2.Location = new System.Drawing.Point(55, 872);
+            this.button2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 47);
+            this.button2.Size = new System.Drawing.Size(202, 75);
             this.button2.TabIndex = 4;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(381, 463);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(265, 39);
+            this.textBox2.TabIndex = 5;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LightGreen;
+            this.button3.Location = new System.Drawing.Point(751, 456);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(150, 46);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Add to Cart";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // ProductID
+            // 
+            this.ProductID.AutoSize = true;
+            this.ProductID.Location = new System.Drawing.Point(236, 470);
+            this.ProductID.Name = "ProductID";
+            this.ProductID.Size = new System.Drawing.Size(119, 32);
+            this.ProductID.TabIndex = 7;
+            this.ProductID.Text = "ProductID";
+            // 
             // BrowsePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 624);
+            this.ClientSize = new System.Drawing.Size(1282, 998);
+            this.Controls.Add(this.ProductID);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "BrowsePage";
             this.Text = "BrowsePage";
             this.Load += new System.EventHandler(this.BrowsePage_Load);
@@ -109,5 +148,8 @@
         private Button button1;
         private Label label1;
         private Button button2;
+        private TextBox textBox2;
+        private Button button3;
+        private Label ProductID;
     }
 }
