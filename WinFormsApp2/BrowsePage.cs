@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Data.SqlClient;
 
 namespace Chitraksh
 {
@@ -15,6 +17,37 @@ namespace Chitraksh
         public BrowsePage()
         {
             InitializeComponent();
+        }
+
+        private void BrowsePage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //when clicked inserts entry having ProductID mentioned in the textbox and makes simialar entry in cart_table
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\Chitraksh.mdf;Integrated Security=True;Connect Timeout=30");
+            con.Open();
+            SqlCommand cmd = new SqlCommand("insert into cart_table values('" + textBox1.Text + "')", con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Added to cart");
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //when clicked close this form and open Home.cs
+            Home home = new Home();
+            home.Show();
+            this.Hide();
+            
         }
     }
 }
