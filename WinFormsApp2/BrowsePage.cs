@@ -34,7 +34,7 @@ namespace Chitraksh
             //when clicked inserts entry having ProductID mentioned in the textbox and makes simialar entry in cart_table
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\HP\Documents\Chitraksh.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
-            SqlCommand cmd = new SqlCommand("insert into cart_table values('" + textBox1.Text + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into cart_table values('" + textBox2.Text + "')", con);
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Added to cart");

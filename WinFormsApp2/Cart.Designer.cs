@@ -41,7 +41,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(99, 86);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
@@ -52,7 +52,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.IndianRed;
             this.button1.Location = new System.Drawing.Point(1006, 485);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(153, 46);
             this.button1.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Gold;
             this.button2.Location = new System.Drawing.Point(1011, 552);
-            this.button2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button2.Margin = new System.Windows.Forms.Padding(5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(153, 46);
             this.button2.TabIndex = 2;
@@ -73,7 +73,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(704, 488);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(5);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(258, 39);
             this.textBox1.TabIndex = 3;
@@ -84,15 +84,15 @@
             this.label1.Location = new System.Drawing.Point(536, 499);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 32);
+            this.label1.Size = new System.Drawing.Size(126, 32);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Entry number";
+            this.label1.Text = "Product ID";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(81, 594);
-            this.button3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button3.Margin = new System.Windows.Forms.Padding(5);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(153, 86);
             this.button3.TabIndex = 5;
@@ -111,7 +111,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Cart";
             this.Text = "Cart";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
