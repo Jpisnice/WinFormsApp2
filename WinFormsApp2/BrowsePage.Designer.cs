@@ -33,13 +33,14 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.ProductID = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(137, 50);
+            this.dataGridView1.Location = new System.Drawing.Point(132, 134);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -61,7 +62,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(381, 463);
+            this.textBox2.Location = new System.Drawing.Point(424, 528);
             this.textBox2.Name = "textBox2";
             this.textBox2.PlaceholderText = "00000";
             this.textBox2.Size = new System.Drawing.Size(265, 39);
@@ -70,7 +71,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.LightGreen;
-            this.button3.Location = new System.Drawing.Point(751, 456);
+            this.button3.Location = new System.Drawing.Point(794, 521);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(150, 46);
             this.button3.TabIndex = 6;
@@ -81,17 +82,28 @@
             // ProductID
             // 
             this.ProductID.AutoSize = true;
-            this.ProductID.Location = new System.Drawing.Point(236, 470);
+            this.ProductID.Location = new System.Drawing.Point(279, 535);
             this.ProductID.Name = "ProductID";
             this.ProductID.Size = new System.Drawing.Size(119, 32);
             this.ProductID.TabIndex = 7;
             this.ProductID.Text = "ProductID";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("STFangsong", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(129, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(320, 48);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Browse Inventory";
             // 
             // BrowsePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 998);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ProductID);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.textBox2);
@@ -114,5 +126,6 @@
         private Button button3;
         private Label ProductID;
         public TextBox textBox2;
+        private Label label1;
     }
 }
